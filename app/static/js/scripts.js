@@ -32,19 +32,22 @@ $(function(){
 $('.project-pic').on('mouseleave', function(){
   $(this).removeClass('animated bounce');
 })
+
 // Post contact message using ajax to avoid page refresh
 
 $('#contact-message').on('submit', function(event){
   event.preventDefault();
   var url = $('#contact-message').attr('action');
-  alert("Form submitted "+ url)
   var request = $.ajax({
   url: url,
   method: "POST",
+  // Get data from the form
   data: $('#contact-message').serialize(),
 });
 
+// Request was successful. 
 request.done(function(message ) {
+  // Checks for errors on forms input
   if(message.errors){
     if(message.errors.first_name){
       console.log("Please enter an email adress");
@@ -88,7 +91,7 @@ request.done(function(message ) {
       })
   }
 }else{
-  console.log(message);
+  // The form was successfully submitted and there was no error
   $('#message-success').show('fade');
   $("#message-success").on("click", function(){
     $(this).hide('fade');
@@ -97,10 +100,13 @@ request.done(function(message ) {
 
 });
 
+// Form couldn't be submitted to the provided url
 request.fail(function( jqXHR, textStatus ) {
   alert( "Request failed: " + textStatus );
 });
+
 })
+// Adds material design icon to a label tag
 $('#first-name label').prepend('<i class="material-icons">account_box</i>');
 
 
