@@ -1,0 +1,136 @@
+/* Styling of header sections starts here */
+header{
+  height: 100vh;
+  background-image: url("/static/img/homepage2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hire-link a{
+  background-color:#2e2e3a;
+  font-weight: 600;
+  padding: 12px;
+  border: 3px solid #bc5d2e;
+  border-radius: 25px;
+  transition: 500ms background ease, 500ms width ease-in-out,
+  500ms font-size ease, 500ms border ease-out, 500ms color ease;
+
+}
+.hire-link a:hover{
+ background-color: #bc5d2e;
+ border-radius: 20px;
+ width: 350px;
+ font-size: 20px;
+ border: 3px solid #bc5d2e;
+ color: black !important;
+
+}
+.container img{
+  margin-top: auto;
+}
+.typed_wrap h1, .typed_wrap span{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 40px !important;
+}
+/* Styling of header section ends here*/
+/* About styling starts here */
+.section-heading{
+  font-size:  3rem;
+  font-family: 'Days One', sans-serif;
+}
+.section-subheading{
+  font-family: 'Days One', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.graduate-year{
+  color: #bd5d38;
+  font-family: 'Days One', sans-serif;
+}
+.degree{
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6c757d;
+}
+p.degree{
+  font-family: 'Saira Extra Condensed',serif !important;
+  font-size: 22px !important;
+}
+span.degree{
+  font-family: 'Saira Extra Condensed',serif !important;
+  font-size: 25px;
+}
+#gpa{
+  font-family: 'Saira Extra Condensed',serif;
+  color: #868e96;
+  font-size: 20px;
+}
+.college {
+    font-family: 'Days One', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.about h2.section-heading span{
+  color: #bc5d2e;
+}
+
+.colored{
+  line-height: 1;
+  font-size: 50px;
+  color: #868e96 !important;
+  transition: 500ms color ease,500ms font-size ease;
+}
+.colored:hover{
+  color: #bd5d38 !important;
+  font-size:55px;
+}
+.trophy{
+  color: #ffc107 !important;
+}
+/* About section styling ends here */
+
+/* Portfolio section styling starts here */
+#portfolio{
+  background-color:#2e2e3a;
+}
+.portfolio .section-heading{
+  color: #bc5d2e !important;
+}
+
+.portfolio hr.style-eight:after{
+  background: #2e2e3a !important;
+}
+
+/* Styling of contact section starts here  */
+#contact{
+  background: #bc5d2e;
+}
+.contact hr.style-eight:after{
+  background:  #bc5d2e !important;
+}
+
+.contact hr.style-eight{
+  color: #2e2e3a !important;
+  border-top: 5px solid #2e2e3a;
+}
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: 5px solid #bc5d2e;
+    color: #bc5d2e;
+    width: 85%;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: '</>';
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    font-size: 1.7em;
+    padding: 0 0.1em;
+    font-weight: bold;
+    background: white;
+}

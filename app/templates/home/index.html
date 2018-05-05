@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block navbar %}
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% endblock %}
+
+{% block header %}
+<header clas="page-header">
+  <div class="container  pt-5">
+    <img class="img-fluid rounded-circle d-block mx-auto" src="{{url_for('static', filename='img/profile_pic1.jpg')}}" alt="">
+      <div class="typed_wrap text-center mt-5">
+        <h1><span>Hi, I am Momo. I design & develop</span></h1></h1>
+          <h2><span class="typed text-white"></span></h2>
+      </div>
+      <div class=" text-center hire-link pt-5">
+        <a href="#" class="btn btn-lg btn-outline-warning text-center text-uppercase text-white">I'm available for a job offer</a>
+
+      </div>
+  </div>
+</header>
+{% endblock %}
+{% block content %}
+<section class="about" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase section-heading">Momo <span>Johnson</span></h2>
+       <hr class="style-eight">
+       <h2 class="text-uppercase section-subheading">Education</h3>
+        <div class="row">
+          <div class="col-md-8 mr-auto">
+            <h3 class="text-uppercase college">Minneapolis Comm. & Tech. College (MCTC)</h3>
+            <div class="text-uppercase degree">Associate of Science</div>
+            <div class="mt-3">
+              <p class="degree mb-0">Computer Software Development</p>
+              <p id="gpa" class="mt-0">GPA 3.59</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p><span class="graduate-year">May 2016 - July 2017</span></p>
+          </div>
+          </div>
+          <h2 class="text-uppercase section-subheading mt-4">Skills</h2>
+          <p class="degree">Programming Languages & Tools</p>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline dev-icons">
+               <li class="list-inline-item pr-2"><i class="devicon-java-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-csharp-line colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-python-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-html5-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-javascript-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-css3-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-django-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-bootstrap-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-jquery-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-mysql-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-postgresql-plain colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-nodejs-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2"><i class="devicon-mongodb-plain-wordmark colored"></i></li>
+             </ul>
+            </div>
+          </div>
+            <h2 class="text-uppercase section-subheading mt-4">Certifications</h2>
+            <div class="mt-3">
+              <ul class="list-unstyled ml-1">
+                <li><span class="trophy"><i class="fas fa-trophy"></i></span> <span class="degree"> C# Developer Certificate - Minneapolis Comm. Tech. College</span></li>
+                <li><span class="trophy"><i class="fas fa-trophy"></i></span><span class="degree"> Java Developer Certificate - Minneapolis Comm. Tech. College</span></li>
+                <li><span class="trophy"><i class="fas fa-trophy"></i></span><span class="degree"> Database Specialist Certificate - Minneapolis Com. Tech. College</span></li>
+              </ul>
+            </div>
+        </div>
+</section>
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2 class="text-center text-uppercase section-heading">Portofolio</h2>
+     <hr class="style-eight">
+     <div class="row">
+       <div class="col-md-4 col-xs-6 project-pic">
+         <a href="#"><img src="{{url_for('static', filename='img/sogwebsite.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/sogwebsite.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/sogwebsite.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic mt-2">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+       <div class="col-md-4 col-xs-2 mt-2 project-pic">
+         <a href="#"><img src="{{url_for('static', filename='img/libapp.png')}}" alt="" class="img-thumbnail"></a>
+       </div>
+     </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="text-center text-uppercase section-heading">Contact Me</h2>
+    <hr class="style-eight">
+    <div class="row">
+      <div id="message-success" class="alert alert-success col-8 mx-auto collapse" role="alert">
+        <h4 class="alert-heading"><strong>Message sent!</strong></h4>
+        <button id="message-sucess-btn" type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p>Your message was sent successfully. I will get back to you within the next 24hrs</p>
+        <hr>
+        <p class="mb-0">If it's is urgent, please send me an email at mo12g13@gmail.com.</p>
+      </div>
+      <div class="col-md-8 col-12 mb-2"><!--start of first grid-->
+        <form action="{{url_for('home.send_message')}}"  method="POST" id="contact-message">
+          {{contact_form.hidden_tag()}}
+        <div class="row">
+          <div class="col-md-6 col-12 mb-2">
+            <div id="first-name" class="alert alert-warning collapse" role="alert">
+              <strong></strong>
+                <button type="button" class="close"aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              {{contact_form.first_name.label}}
+              {{contact_form.first_name(class="form-control", id="first_name", placeholder="First name")}}
+          </div>
+          <div class="col-md-6 col-12 mb-2">
+            <div id="last-name" class="alert alert-warning collapse" role="alert">
+            <strong>Incorrect Entry!</strong>
+            <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <span class="ion-android-person-add"></span> {{contact_form.last_name.label}}
+          {{contact_form.last_name(class="form-control", id="last_name", placeholder="Last name")}}
+          </div>
+          <div class="col-md-6 col-12 mb-2">
+            <div id="email" class="alert alert-warning collapse" role="alert">
+              <strong>Incorrect Entry!</strong>.
+              <button type="button" class="close"  aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <span class="ion-email"></span>{{contact_form.email.label}}
+            {{contact_form.email(class="form-control", id="email", placeholder="Email address")}}
+          </div>
+          <div class="col-md-6 col-12 mb-2">
+            <div id="phone-number" class="alert alert-warning collapse" role="alert">
+              <strong>Incorrect Entry!</strong>.
+              <button type="button" class="close"  aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <span class="ion-android-call"></span>{{contact_form.phone_number.label}}
+            {{contact_form.phone_number(class="form-control", id="email", placeholder="Phone number")}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div id="message" class="alert alert-warning collapse" role="alert">
+              <strong>Incorrect Entry!</strong>{{error}}.
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <span class="ion-ios-compose"></span>{{contact_form.message.label}}
+            {{contact_form.message(class="form-control", id="message", placeholder="Message", rows="10", cols="50")}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-2">
+            {{contact_form.recaptcha}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-2">
+            <button type="submit" class="btn btn-primary btn-lg">Send message <span class="ion-paper-airplane"></span></button>
+          </div>
+        </div>
+
+      </form>
+      </div>
+
+      <div class="col-md-4 text-justify"><!--start of second grid-->
+        <p>Do you want to get in touch with me? Fill out the form below and send me a message about what you are interested in doing. I will get back to you within the next 24hrs.</p>
+        <p>If you don't hear back from me within 24hrs, please contact give me a call. The automatic reply message. will have my phone number listed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
