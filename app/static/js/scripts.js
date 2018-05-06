@@ -1,6 +1,6 @@
 $(function(){
   $(".typed").typed({
-  		strings: ["Java web and desktop applications.", "Python Web Applications.", " C# desktop applications.", "JavaScript Web Applications."],
+  		strings: ["Java desktop applications.", "Python Web Applications.", " C# desktop applications.", "JavaScript Web Applications."],
   		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
   		stringsElement: null,
   		// typing speed
