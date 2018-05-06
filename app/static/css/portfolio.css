@@ -1,7 +1,7 @@
 /* Styling of header sections starts here */
 header{
   height: 100vh;
-  background-image: url("/static/img/homepage2.jpg");
+  background-image: url("../img/homepage2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -111,9 +111,30 @@ span.degree{
   background:  #bc5d2e !important;
 }
 
+.material-icons{
+  font-size: 30px !important;
+}
+#contact label{
+  font-size: 26px;
+  font-weight: 500;
+  font-weight: "Extra Condensed"
+}
 .contact hr.style-eight{
   color: #2e2e3a !important;
   border-top: 5px solid #2e2e3a;
+}
+.lead{
+  font-family: 'Lobster Two', cursive;
+  font-size: 22px;
+}
+.social .list-inline-item{
+  font-size: 45px;
+  color: black;
+  transition: 500ms color ease;
+}
+
+.social .list-inline-item:hover{
+  color: #868e96;
 }
 hr.style-eight {
     overflow: visible; /* For IE */

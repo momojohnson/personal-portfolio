@@ -107,7 +107,12 @@ request.fail(function( jqXHR, textStatus ) {
 
 })
 // Adds material design icon to a label tag
-$('#first-name label').prepend('<i class="material-icons">account_box</i>');
+$('.label-name label').prepend('<i class="material-icons">person</i>');
+$('.label-email').prepend('<i class="material-icons">email</i>');
+$('.label-phone').prepend('<i class="material-icons">phone</i>');
+$('.label-message').prepend('<i class="material-icons">message</i>');
+$('button.submit-message').append('<i class="material-icons">send</i>');
+
 
 
 })
