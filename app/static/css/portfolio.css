@@ -183,14 +183,11 @@ hr.style-eight:after {
 
 /* Media query for small devices*/
 @media (max-width: 576px) {
-  header{
-  height: 80vh;
-}
 .hire-link a{
   font-weight: 300;
 }
 .typed_wrap h1, .typed_wrap span{
-  font-size: 20px !important;
+  font-size: 17px !important;
 }
 #page-header img{
   max-height: 200px !important;
