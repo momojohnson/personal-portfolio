@@ -1,4 +1,6 @@
 /* Styling of header sections starts here */
+
+
 header{
   height: 100vh;
   background-image: url("../img/homepage2.jpg");
@@ -93,14 +95,14 @@ span.degree{
 
 /* Portfolio section styling starts here */
 #portfolio{
-  background-color:#2e2e3a;
+  background-color:#bbb8b2;
 }
 .portfolio .section-heading{
   color: #bc5d2e !important;
 }
 
 .portfolio hr.style-eight:after{
-  background: #2e2e3a !important;
+  background: #bbb8b2 !important;
 }
 
 /* Styling of contact section starts here  */
@@ -135,6 +137,29 @@ span.degree{
 
 .social .list-inline-item:hover{
   color: #868e96;
+}
+/* Contact section styling ends here*/
+
+/*Styling of footer section starts here*/
+#footer{
+  background-color: #2c3e50;
+
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1.28571429em;
+    text-align: center !important;
+}
+
+.btn-social {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.copyright{
+  background-color: #2e2e3a;
+  padding: 20px;
 }
 hr.style-eight {
     overflow: visible; /* For IE */
