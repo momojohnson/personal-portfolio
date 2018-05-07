@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block navbar %}
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md fixed-top">
   <!-- Brand -->
   <a class="navbar-brand" href="#">Navbar</a>
 
   <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler  text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <!--<span class="navbar-toggler-icon"></span>-->
+     <i class="fas fa-bars"></i>
   </button>
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -34,7 +35,7 @@
           <h2><span class="typed text-white"></span></h2>
       </div>
       <div class=" text-center hire-link pt-5">
-        <a href="#" class="btn btn-lg btn-outline-warning text-center text-uppercase text-white">I'm available for a job offer</a>
+        <a href="#" class="btn btn-lg btn-outline-warning text-center text-uppercase text-white">Send me a message</a>
 
       </div>
   </div>
@@ -64,19 +65,19 @@
           <div class="row">
             <div class="col-md-12">
               <ul class="list-inline dev-icons">
-               <li class="list-inline-item pr-2"><i class="devicon-java-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-csharp-line colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-python-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-html5-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-javascript-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-css3-plain-wordmark colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-django-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-bootstrap-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-jquery-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-mysql-plain-wordmark colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-postgresql-plain colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-nodejs-plain-wordmark colored"></i></li>
-               <li class="list-inline-item pr-2"><i class="devicon-mongodb-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-java-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-csharp-line colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-python-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-html5-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-javascript-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-css3-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-django-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-bootstrap-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-jquery-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-mysql-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-postgresql-plain colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-nodejs-plain-wordmark colored"></i></li>
+               <li class="list-inline-item pr-2 pb-3"><i class="devicon-mongodb-plain-wordmark colored"></i></li>
              </ul>
             </div>
           </div>
@@ -221,16 +222,12 @@
       </div>
 
       <div class="col-md-4 text-justify lead mt-3"><!--start of second grid-->
-        <p>Do you want to get in touch with me? Fill out the form below and send me a message. I will get back to you within the next 24hrs.</p>
+        <p>Do you want to get in touch with me? Fill out the form and send me a message. I will get back to you within the next 24hrs.</p>
         <p class="mb-5">I am looking forward to hearing from you soon. Thank you!!!</p>
         <div class="social ">
-          <h2 class="text-uppercase text-center">Around the Web</h2>
-          <ul class="list-inline text-center">
-               <a href="https://github.com/momojohnson?tab=repositories" target="_blank"><li class="list-inline-item pr-2"><i class="fab fa-github"></i></li></a>
-               <a href="https://twitter.com/momo12g13" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-twitter"></i></li></a>
-               <a href="https://www.linkedin.com/in/momo-johnson-17b803131/" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-linkedin-in"></i></li></a>
-               <a href="https://www.freecodecamp.org/fcc2b91b402" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-free-code-camp"></i></li></a>
-             </ul>
+          <h4 class="text-uppercase text-center">In a rush</h4>
+          <p>If you don't have time to fill out the form, click <a class="text-white" href="mailto:mo12g13@gmail.com">here</a> and send me email.</p>
+          <p>I promise; I will get to you as soon as possible.</p>
         </div>
       </div>
     </div>
@@ -248,15 +245,15 @@
       Minneapolis, Minnesota</p>
     </div>
     <div class="col-md-4 mb-4 mb-lg-0 mt-5">
-          <h3 class="text-uppercase">Around the Web</h3>
+          <h4 class="text-uppercase">Around the Web</h3>
           <ul class="list-inline text-white mt-4">
-               <a  class="btn btn-outline-light rounded-circle text-center btn-social" href="https://github.com/momojohnson?tab=repositories" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-github"></i></li></a>
-               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://twitter.com/momo12g13" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-twitter"></i></li></a>
-               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://www.linkedin.com/in/momo-johnson-17b803131/" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-linkedin-in"></i></li></a>
-               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://www.freecodecamp.org/fcc2b91b402" target="_blank"><li class="list-inline-item pr-3"><i class="fab fa-free-code-camp"></i></li></a>
+               <a  class="btn btn-outline-light rounded-circle text-center btn-social" href="https://github.com/momojohnson?tab=repositories" target="_blank"><li class="list-inline-item"><i class="fab fa-github"></i></li></a>
+               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://twitter.com/momo12g13" target="_blank"><li class="list-inline-item "><i class="fab fa-twitter"></i></li></a>
+               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://www.linkedin.com/in/momo-johnson-17b803131/" target="_blank"><li class="list-inline-item "><i class="fab fa-linkedin-in"></i></li></a>
+               <a class="btn btn-outline-light  rounded-circle text-center btn-social" href="https://www.freecodecamp.org/fcc2b91b402" target="_blank"><li class="list-inline-item "><i class="fab fa-free-code-camp"></i></li></a>
             </ul>       
     </div>
-    <div class="col-md-4 mb-0 mb-lg-0 mt-5">
+    <div class="col-md-4  mb-0 mb-lg-0 mt-5">
       <h3>About Momo Johnson</h3>
       <p class="lead mt-4">I'm passionate about building great applications with code quality in mind.</p>
       
